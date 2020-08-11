@@ -1,0 +1,23 @@
+<div class="slides">
+           <img src="logo2.jpg" width="100%"height="400px">
+        <div class="caption">Sunrise Logo</div>
+       </div>
+	   
+	   
+
+        <script>
+            var slideindex=0;
+	        slides();
+	         function slides(){
+	            var i;
+	            var x=document.getElementsByClassName("slides");
+	            for(i=0;i<x.length;i++)
+		            {x[i].style.display="none";
+	             }
+	             slideindex++;
+	             if(slideindex>x.length)
+	                {slideindex=1}
+	            x[slideindex-1].style.display="block";
+	             setTimeout(slides,5000);
+		    }
+        </script><p>
